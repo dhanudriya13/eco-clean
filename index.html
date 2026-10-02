@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Optimasi SEO & Metadata Bahasa Indonesia -->
+  <title>EcoClean Buleleng - Kalkulator Sabun Minyak Jelantah & Titik Tukar Bali</title>
+  <meta name="description" content="Platform daur ulang minyak jelantah di Kabupaten Buleleng, Bali. Hitung takaran Soda Api (NaOH) untuk membuat sabun alami ramah lingkungan dan temukan titik penukaran jelantah terdekat di Singaraja, Lovina, Seririt.">
+  <meta name="keywords" content="minyak jelantah buleleng, daur ulang jelantah bali, kalkulator NaOH sabun, bank sampah buleleng, sabun minyak jelantah, singaraja, lovina">
+  <meta name="author" content="EcoClean Buleleng">
+  
+  <!-- Open Graph / Berbagi Sosial Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="EcoClean Buleleng - Kalkulator Sabun Jelantah & Titik Tukar Bali">
+  <meta property="og:description" content="Ubah minyak jelantah jadi sabun pembersih serbaguna atau tukarkan dengan uang tunai di Buleleng, Bali.">
+  <meta property="og:image" content="assets/images/hero-soap.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
+
+  <!-- Sistem Desain Kustom -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Data Terstruktur JSON-LD untuk SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "EcoClean Buleleng",
+    "applicationCategory": "EnvironmentalApplication",
+    "operatingSystem": "All",
+    "description": "Kalkulator takaran sabun minyak jelantah dan direktori penukaran jelantah di Kabupaten Buleleng, Bali.",
+    "areaServed": "Kabupaten Buleleng, Bali, Indonesia",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IDR"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Efek Cahaya Latar Belakang -->
+  <div class="bg-ambient-lights" aria-hidden="true">
+    <div class="ambient-blob-1"></div>
+    <div class="ambient-blob-2"></div>
+  </div>
+
+  <!-- Bilah Navigasi Utama -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <div class="logo-icon">🌿</div>
+        <span>Eco<span class="gradient-text">Clean</span> <small style="font-size: 0.72rem; color: var(--primary); font-weight: 700; margin-left: 2px;">Buleleng</small></span>
+      </a>
+
+      <nav aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="#calculator" class="nav-link">Kalkulator NaOH</a></li>
+          <li><a href="#locator" class="nav-link">Titik Tukar Buleleng</a></li>
+          <li><a href="#education" class="nav-link">Bahaya & Dampak</a></li>
+          <li><a href="#tutorial" class="nav-link">Panduan Sabun</a></li>
+          <li><a href="#shop" class="nav-link">Toko Bahan</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="cartToggleBtn" class="theme-toggle-btn" aria-label="Keranjang Belanja" title="Keranjang Belanja" style="position: relative;">
+          🛒<span id="cartCountBadge" class="cart-count-badge" style="display: none;">0</span>
+        </button>
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Ubah Mode Gelap/Terang" title="Ubah Tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Buka Menu Navigasi">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Bagian Hero -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            Inisiatif Lingkungan Lestari Buleleng, Bali
+          </div>
+          <h1 class="hero-title">
+            Ubah Minyak Jelantah Jadi <span class="gradient-text">Sabun Ramah Lingkungan</span>.
+          </h1>
+          <p class="hero-subtitle">
+            Jangan buang sisa minyak goreng ke saluran got atau tanah Buleleng! Hitung kebutuhan Soda Api ($\text{NaOH}$) secara akurat untuk diolah menjadi sabun cuci, atau tukarkan jelantah Anda menjadi uang tunai di bank sampah terdekat di Singaraja, Lovina, hingga Seririt.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#calculator" class="btn btn-primary" id="heroCalcCta">
+              <span>Hitung Takaran Sabun</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="#locator" class="btn btn-secondary" id="heroLocatorCta">
+              <span>Titik Tukar di Buleleng</span>
+              <span>📍</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-card">
+              <div class="stat-val">1.000.000L</div>
+              <div class="stat-lbl">Air Bersih Terjaga / 1L Jelantah</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="stat-val">0.141</div>
+              <div class="stat-lbl">Faktor Saponifikasi NaOH</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="stat-val">100%</div>
+              <div class="stat-lbl">Sabun Pembersih Alami Biodegradable</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <div style="position: relative; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px; box-shadow: var(--shadow-sm);">
+              <img src="assets/images/hero-soap.jpg" alt="Sabun Alami Olahan Minyak Jelantah di Buleleng Bali" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+              <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(8px); padding: 4px 12px; border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 600; color: #ffffff; display: flex; align-items: center; gap: 6px;">
+                <span>✨</span> Sabun Daur Ulang Alami
+              </div>
+            </div>
+            <div class="quick-preview-badge">Pratinjau Rumus Akurat</div>
+            <div class="visual-preview-metric">
+              <span class="visual-preview-val" id="heroQuickDisplay">0.141</span>
+              <span class="visual-preview-unit">g NaOH per 1.0L Minyak</span>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">
+              Rumus: <code>Gram NaOH = Minyak Jelantah (Liter) &times; 0.141</code>. Disesuaikan khusus untuk menetralkan asam lemak bebas pada minyak sisa penggorengan dapur.
+            </p>
+            <div style="background: var(--bg-subtle); padding: 12px 16px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.88rem; font-weight: 600;">Takaran Standar: 1.0 Liter</span>
+              <span style="color: var(--primary); font-weight: 700; font-size: 0.95rem;">~9 Batang Sabun Cuci</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FITUR 1: Kalkulator Saponifikasi NaOH -->
+    <section id="calculator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Kalkulator Interaktif</span>
+          <h2 class="section-title">Kalkulator Sabun Minyak Jelantah</h2>
+          <p class="section-desc">
+            Masukkan jumlah volume minyak goreng bekas yang Anda miliki (dalam Liter) untuk mengetahui takaran pasti Soda Api ($\text{NaOH}$) dan air yang dibutuhkan.
+          </p>
+        </div>
+
+        <div class="calc-wrapper">
+          <!-- Sisi Input -->
+          <div class="calc-input-pane">
+            <div>
+              <div class="form-group-label">
+                <label for="oilVolumeInput">Volume Minyak Jelantah</label>
+                <span style="color: var(--text-muted); font-size: 0.85rem;">(Sudah Disaring Bersih)</span>
+              </div>
+              <div class="oil-input-box">
+                <input type="number" id="oilVolumeInput" value="1.0" min="0.1" max="50" step="0.1" aria-label="Volume Minyak Jelantah dalam Liter">
+                <span class="oil-unit-tag">Liter</span>
+              </div>
+              <div class="slider-container">
+                <input type="range" id="oilVolumeSlider" class="custom-range-slider" min="0.1" max="10.0" step="0.1" value="1.0" aria-label="Slider volume minyak">
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 10px; color: var(--text-muted);">Pilihan Cepat Takaran Batch:</div>
+              <div class="preset-buttons-row">
+                <button type="button" class="preset-btn" data-volume="0.5">0.5 Liter (Uji Coba)</button>
+                <button type="button" class="preset-btn active" data-volume="1.0">1.0 Liter (Standar)</button>
+                <button type="button" class="preset-btn" data-volume="2.0">2.0 Liter (Keluarga)</button>
+                <button type="button" class="preset-btn" data-volume="5.0">5.0 Liter (Warung / Resto)</button>
+              </div>
+            </div>
+
+            <div class="formula-explainer-banner">
+              <strong>Rumus & Rasio yang Diterapkan:</strong><br>
+              <code>Gram NaOH = Minyak dalam Liter &times; 0.141</code><br>
+              <code>Perbandingan Minyak : Air = 7 : 2</code><br>
+              <span style="font-size: 0.82rem; margin-top: 4px; display: inline-block;">
+                Setiap 7 bagian volume minyak membutuhkan 2 bagian air suling dingin (contoh: 1 Liter minyak membutuhkan ~285.7 gram / ml air).
+              </span>
+            </div>
+          </div>
+
+          <!-- Sisi Hasil Output -->
+          <div class="calc-result-pane">
+            <div>
+              <div class="res-highlight-box">
+                <div class="res-label">Kebutuhan Soda Api (NaOH) Murni</div>
+                <div class="res-big-number">
+                  <span id="naohResult">0.141</span> <span style="font-size: 1.5rem; font-weight: 600;">gram</span>
+                </div>
+              </div>
+
+              <div class="res-submetrics">
+                <div class="submetric-item">
+                  <div class="sub-lbl">Air Suling (Rasio Minyak:Air = 7:2)</div>
+                  <div class="sub-val" id="waterResult">285.7 g (~286 ml)</div>
+                </div>
+                <div class="submetric-item">
+                  <div class="sub-lbl">Estimasi Hasil Sabun</div>
+                  <div class="sub-val" id="soapYieldResult">~12 batang (1.206g)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-actions-column">
+              <button id="applyToTutorialBtn" class="btn btn-primary" style="width: 100%;">
+                <span>Buat Sabun dengan Takaran Ini</span>
+                <span>🧼 &darr;</span>
+              </button>
+              <button id="copyRecipeBtn" class="btn btn-secondary" style="width: 100%;">
+                <span>Salin Resep ke Catatan</span>
+                <span>📋</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FITUR 2: Lokasi Penukaran Jelantah di Buleleng, Bali -->
+    <section id="locator" style="background: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Jaringan Daur Ulang Bali</span>
+          <h2 class="section-title">Titik Penukaran Jelantah di Buleleng</h2>
+          <p class="section-desc">
+            Tidak sempat membuat sabun sendiri? Jangan dibuang! Bawa minyak jelantah Anda ke bank sampah atau depo daur ulang mitra di Singaraja, Lovina, Seririt, hingga Kubutambahan untuk ditukar dengan uang tunai atau sembako.
+          </p>
+        </div>
+
+        <div class="locator-controls-bar">
+          <div class="search-input-group">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="locationSearchInput" placeholder="Cari nama bank sampah, jalan, atau kecamatan di Buleleng..." aria-label="Cari lokasi penukaran">
+          </div>
+
+          <div class="filter-pills-group">
+            <button class="filter-pill active" data-filter="all">Semua Titik</button>
+            <button class="filter-pill" data-filter="Uang Tunai">💵 Uang Tunai</button>
+            <button class="filter-pill" data-filter="Poin">🎟️ Poin / Sembako</button>
+            <button class="filter-pill" data-filter="Donasi">🌊 Donasi Laut Bali</button>
+            <button id="btnUserLocation" class="btn btn-secondary btn-sm" style="border-radius: var(--radius-full);">
+              📍 Lokasi Saya
+            </button>
+          </div>
+        </div>
+
+        <div class="locator-split-layout">
+          <!-- Wadah Peta Google Maps Resmi -->
+          <div class="map-container-wrapper">
+            <div id="googleMap" role="region" aria-label="Peta Google Maps titik pengumpulan minyak jelantah di Buleleng" style="width: 100%; height: 100%;"></div>
+          </div>
+
+          <!-- Daftar Gulir Lokasi -->
+          <div class="locations-list-scroll" id="locationsList" role="list">
+            <!-- Dimuat otomatis via locator.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FITUR 3: Edukasi Bahaya Minyak Jelantah (Lingkungan & Kesehatan) -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Edukasi & Kesadaran</span>
+          <h2 class="section-title">Bahaya Nyata Minyak Jelantah</h2>
+          <p class="section-desc">
+            Mengapa membuang jelantah sembarangan dan menggunakannya berulang kali sangat merusak kelestarian alam Bali dan kesehatan tubuh keluarga Anda.
+          </p>
+        </div>
+
+        <div class="edu-cards-grid">
+          <!-- Bahaya Lingkungan -->
+          <div class="edu-card env">
+            <div class="edu-card-top-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <h3 class="edu-card-title">Dampak Fatal terhadap Lingkungan Bali</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Ketika minyak jelantah dituangkan ke wastafel atau selokan, minyak tidak akan larut dengan air, melainkan mengendap dan merusak:
+            </p>
+            <ul class="danger-bullets-list">
+              <li class="danger-bullet-item">
+                <span class="bullet-icon">💧</span>
+                <div>
+                  <strong>Mencemari Laut & Terumbu Karang:</strong> Satu liter minyak jelantah dapat merusak lapisan hingga <strong>1.000.000 liter air bersih</strong>. Minyak mengapung di pesisir Buleleng, menghalangi sinar matahari, dan membunuh terumbu karang serta biota laut.
+                </div>
+              </li>
+              <li class="danger-bullet-item">
+                <span class="bullet-icon">🧱</span>
+                <div>
+                  <strong>Menyumbat Got & Membentuk Fatberg:</strong> Minyak membeku di gorong-gorong drainase, bercampur limbah padat hingga menjadi batu lemak keras (fatberg) pemicu banjir di musim hujan.
+                </div>
+              </li>
+              <li class="danger-bullet-item">
+                <span class="bullet-icon">🌱</span>
+                <div>
+                  <strong>Merusak Kesuburan Tanah:</strong> Jelantah yang dibuang ke tanah menutup pori-pori tanah, mematikan mikroorganisme penyubur, dan mencemari sumur air minum warga.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bahaya Kesehatan -->
+          <div class="edu-card health">
+            <div class="edu-card-top-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+            <h3 class="edu-card-title">Bahaya Fatal Pemakaian Berulang Bagi Tubuh</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Memanaskan minyak goreng berulang kali di atas titik asap menyebabkan kerusakan rantai kimia yang memicu racun berbahaya:
+            </p>
+            <ul class="danger-bullets-list">
+              <li class="danger-bullet-item">
+                <span class="bullet-icon">⚠️</span>
+                <div>
+                  <strong>Senyawa Karsinogenik (PAH & Akrolein):</strong> Pemanasan ekstrem menghasilkan senyawa karsinogen seperti <em>Polycyclic Aromatic Hydrocarbons</em> yang secara medis terbukti meningkatkan risiko kanker pencernaan dan tenggorokan.
+                </div>
+              </li>
+              <li class="danger-bullet-item">
+                <span class="bullet-icon">🫀</span>
+                <div>
+                  <strong>Lonjakan Kolesterol Jahat (LDL) & Jantung:</strong> Jelantah yang teroksidasi mengandung asam lemak trans tinggi yang memicu plak aterosklerosis pada pembuluh darah, penyebab utama hipertensi, stroke, dan serangan jantung.
+                </div>
+              </li>
+              <li class="danger-bullet-item">
+                <span class="bullet-icon">🔬</span>
+                <div>
+                  <strong>Kerusakan Organ Hati & Ginjal:</strong> Beban radikal bebas dan asam lemak teroksidasi membebani filtrasi ginjal dan memicu perlemakan hati (<em>fatty liver</em>).
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Simulator Dampak Interaktif -->
+        <div class="impact-simulator-box">
+          <h3 style="font-size: 1.6rem; margin-bottom: 8px;">Dampak Nyata Aksi Daur Ulang Anda</h3>
+          <p style="color: var(--text-muted); max-width: 550px; margin: 0 auto 24px auto;">
+            Geser jumlah liter jelantah yang berhasil Anda kumpulkan atau olah menjadi sabun untuk melihat kontribusi lingkungan Anda:
+          </p>
+
+          <div style="max-width: 480px; margin: 0 auto;">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 8px;">
+              <span>Jumlah Jelantah yang Didaur Ulang:</span>
+              <span id="impactOilDisplay" style="color: var(--primary);">5 Liter</span>
+            </div>
+            <input type="range" id="impactOilSlider" class="custom-range-slider" min="1" max="100" value="5" step="1" aria-label="Slider dampak daur ulang">
+          </div>
+
+          <div class="impact-metrics-row">
+            <div class="impact-metric-card">
+              <div class="metric-val" id="waterSavedCount">5.000.000 Liter</div>
+              <div class="metric-label">Air Bersih Terlindungi dari Pencemaran</div>
+            </div>
+            <div class="impact-metric-card">
+              <div class="metric-val" id="co2SavedCount">14.3 kg</div>
+              <div class="metric-label">Emisi Karbon (CO2) Berhasil Dicegah</div>
+            </div>
+            <div class="impact-metric-card">
+              <div class="metric-val" id="fatbergAvertedCount">6.3 kg</div>
+              <div class="metric-label">Gumpalan Lemak Selokan yang Dicegah</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FITUR 4: Panduan Interaktif Pembuatan Sabun -->
+    <section id="tutorial">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Panduan Langkah Demi Langkah</span>
+          <h2 class="section-title">Cara Membuat Sabun Dari Minyak Jelantah</h2>
+          <p class="section-desc">
+            Panduan metode dingin (<em>cold process</em>) yang aman bagi pemula untuk mengolah minyak bekas dapur menjadi sabun batang pembersih piring, perabot berminyak, pakaian, dan lantai rumah.
+          </p>
+        </div>
+
+        <!-- Banner Sinkronisasi Takaran Resep -->
+        <div class="tutorial-banner-sync" id="tutorialSyncBanner">
+          <div>
+            <div class="sync-info-title">Takaran Resep Aktif (Tersinkronisasi dari Kalkulator)</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted); margin-top: 2px;">
+              Perbandingan Minyak : Air = <strong>7 : 2</strong>. Ubah takaran kapan saja via <a href="#calculator" style="color: var(--primary); font-weight: 600; text-decoration: none;">Kalkulator NaOH</a>.
+            </div>
+          </div>
+          <div class="sync-pills-group">
+            <div class="sync-pill">Minyak: <span id="tutorialSyncOil">1.0 L</span></div>
+            <div class="sync-pill">Soda Api (NaOH): <span id="tutorialSyncNaoh">0.141 g</span></div>
+            <div class="sync-pill">Air Suling (7:2): <span id="tutorialSyncWater">285.7 g (~286 ml)</span></div>
+          </div>
+        </div>
+
+        <!-- Gerbang Keselamatan Wajib (Safety Gate) -->
+        <div class="safety-gate-card">
+          <div class="safety-gate-header">
+            <span class="safety-warning-badge">Wajib Keselamatan</span>
+            <h3 style="font-size: 1.25rem;">Protokol Perlengkapan APD & Penanganan Bahan Kimia</h3>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Soda Api ($\text{NaOH}$) adalah bahan kimia kaustik yang menghasilkan panas saat dilarutkan dalam air dan dapat menyebabkan luka bakar kulit atau iritasi mata jika terkena langsung. Pastikan Anda telah menyiapkan:
+          </p>
+
+          <div class="safety-checkbox-list">
+            <label class="safety-checkbox-item">
+              <input type="checkbox" class="safety-checkbox-input" id="chkGoggles">
+              <span>🥽 Kacamata pelindung / safety goggles (melindungi mata)</span>
+            </label>
+            <label class="safety-checkbox-item">
+              <input type="checkbox" class="safety-checkbox-input" id="chkGloves">
+              <span>🧤 Sarung tangan karet tebal atau nitril</span>
+            </label>
+            <label class="safety-checkbox-item">
+              <input type="checkbox" class="safety-checkbox-input" id="chkVent">
+              <span>💨 Ruangan berventilasi baik atau di area luar ruangan (teras)</span>
+            </label>
+            <label class="safety-checkbox-item">
+              <input type="checkbox" class="safety-checkbox-input" id="chkContainers">
+              <span>🥣 Wadah plastik tebal jenis PP (kode 5) atau baskom stainless steel (DILARANG aluminium!)</span>
+            </label>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 14px;">
+            <div id="safetyGateStatus" style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);">
+              Harap centang seluruh 4 perlengkapan di atas untuk membuka langkah pembuatan.
+            </div>
+            <button id="unlockSafetyBtn" class="btn btn-secondary btn-sm" disabled>
+              Verifikasi & Buka Panduan &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Alur Langkah-Langkah Pembuatan -->
+        <div class="tutorial-steps-container" id="tutorialStepsFlow">
+          
+          <!-- Langkah 1 -->
+          <article class="tutorial-step-card" id="step-1">
+            <div class="step-header-row">
+              <div class="step-num-badge">1</div>
+              <div>
+                <h3 class="step-title">Penyaringan & Pemurnian Minyak Jelantah</h3>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">Tahap Persiapan & Menghilangkan Bau</span>
+              </div>
+            </div>
+            <div class="step-content-body">
+              <p>
+                Minyak jelantah sisa dapur mengandung remah makanan, garam, dan endapan hitam yang bisa merusak tekstur dan aroma sabun jika tidak disaring bersih.
+              </p>
+              <div class="step-recipe-callout">
+                <span>Target Volume Minyak:</span>
+                <strong data-sync="oil">1.0 Liter</strong>
+              </div>
+              <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                <li>Saring minyak jelantah menggunakan saringan kawat halus untuk membuang ampas makanan kasar.</li>
+                <li>Saring kembali menggunakan kain tipis (kain mori) atau kertas saring kopi agar minyak jernih bebas jelaga.</li>
+                <li><em>Tips Alami Menghilangkan Bau:</em> Panaskan minyak saringan dengan api kecil bersama potongan kulit jeruk nipis atau batang serai selama 10 menit, lalu biarkan mendingin hingga suhu ruang.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
+              <button class="btn btn-primary btn-sm btn-mark-step">Tandai Selesai</button>
+            </div>
+          </article>
+
+          <!-- Langkah 2 -->
+          <article class="tutorial-step-card" id="step-2">
+            <div class="step-header-row">
+              <div class="step-num-badge">2</div>
+              <div>
+                <h3 class="step-title">Pembuatan Larutan Soda Api (Lye Solution)</h3>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">Pencampuran Kimia Eksotermik</span>
+              </div>
+            </div>
+            <div class="step-content-body">
+              <p>
+                Melarutkan $\text{NaOH}$ ke dalam air akan menghasilkan panas spontan (suhu dapat mencapai 80°C) dan uap sesaat. Lakukan dengan tenang dan hati-hati.
+              </p>
+              <div class="step-recipe-callout">
+                <span>Takaran yang Harus Ditimbang:</span>
+                <div>
+                  <strong data-sync="naoh">0.141 gram</strong> Soda Api ($\text{NaOH}$) + <strong data-sync="water">285.7 gram (~286 ml) (Rasio 7:2)</strong> Air Suling Dingin
+                </div>
+              </div>
+
+              <!-- Keterangan Rasio Minyak : Air = 7 : 2 -->
+              <div style="background: var(--bg-subtle); border-left: 4px solid var(--primary); padding: 12px 16px; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 14px; font-size: 0.92rem;">
+                📌 <strong>Keterangan Rasio Minyak : Air = 7 : 2</strong><br>
+                Resep ini menggunakan perbandingan tetap <strong>Minyak : Air = 7 : 2</strong> (setiap 7 bagian minyak membutuhkan 2 bagian air suling). Contoh:<br>
+                • 0.5 Liter Minyak &rarr; 142.9 ml air<br>
+                • 1.0 Liter Minyak &rarr; 285.7 ml air<br>
+                • 2.0 Liter Minyak &rarr; 571.4 ml air<br>
+                • 5.0 Liter Minyak &rarr; 1.428 ml (1.43 L) air
+              </div>
+
+              <div class="step-alert-box">
+                <strong>ATURAN KESELAMATAN MUTLAK:</strong> Selalu tuangkan kristal $\text{NaOH}$ <em>secara perlahan ke dalam air</em>. <strong>JANGAN PERNAH menuangkan air ke atas bubuk $\text{NaOH}$ kering</strong>, karena dapat memicu letupan cairan panas yang berbahaya!
+              </div>
+              <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px; margin-top: 14px;">
+                <li>Siapkan air suling di dalam wadah plastik PP tebal atau mangkuk stainless steel.</li>
+                <li>Dengan memakai sarung tangan dan kacamata, masukkan butiran $\text{NaOH}$ sedikit demi sedikit sambil diaduk perlahan memakai spatula silikon sampai larut bening.</li>
+                <li>Diamkan larutan di tempat terbuka berangin hingga suhunya turun menjadi hangat kuku (sekitar 38°C – 45°C).</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
+              <button class="btn btn-primary btn-sm btn-mark-step">Tandai Selesai</button>
+            </div>
+          </article>
+
+          <!-- Langkah 3 -->
+          <article class="tutorial-step-card" id="step-3">
+            <div class="step-header-row">
+              <div class="step-num-badge">3</div>
+              <div>
+                <h3 class="step-title">Mencampur Minyak & Lye Hingga Mencapai "Trace"</h3>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">Reaksi Pembentukan Sabun (Saponifikasi)</span>
+              </div>
+            </div>
+            <div class="step-content-body">
+              <p>
+                Saat larutan soda api bereaksi dengan asam lemak minyak, terjadi reaksi saponifikasi yang mengubahnya menjadi garam sabun dan gliserin alami.
+              </p>
+              <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                <li>Pastikan suhu minyak saringan dan larutan $\text{NaOH}$ seimbang (sama-sama hangat suam-suam kuku).</li>
+                <li>Tuang larutan soda api ke dalam wadah minyak secara perlahan sambil terus diaduk.</li>
+                <li>Aduk adonan menggunakan <em>hand blender</em> (blender tangan) dalam putaran 15 detik berselang-seling, atau gunakan pengocok kawat (<em>whisk</em>) secara konsisten selama 30–45 menit.</li>
+                <li><strong>Mencapai Fase Trace:</strong> Adonan akan mengental menyerupai saus mayones atau susu kental manis. Bila diteteskan ke permukaan dan meninggalkan bekas jejak selama 3 detik, adonan telah siap dicetak!</li>
+                <li><em>Opsional:</em> Anda dapat menambahkan beberapa tetes minyak esensial serai/jeruk atau 1 sendok makan soda cuci untuk daya pembersih lemak yang lebih kuat.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
+              <button class="btn btn-primary btn-sm btn-mark-step">Tandai Selesai</button>
+            </div>
+          </article>
+
+          <!-- Langkah 4 -->
+          <article class="tutorial-step-card" id="step-4">
+            <div class="step-header-row">
+              <div class="step-num-badge">4</div>
+              <div>
+                <h3 class="step-title">Menuang ke Cetakan & Pemeraman (24–48 Jam)</h3>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">Proses Pemadatan Tahap Awal</span>
+              </div>
+            </div>
+            <div class="step-content-body">
+              <p>
+                Tuang adonan kental ke dalam cetakan silikon, atau gunakan wadah bekas kotak susu/kardus yang telah dialasi kertas minyak / plastik.
+              </p>
+              <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                <li>Ketuk-ketuk cetakan di atas meja dengan lembut untuk mengeluarkan gelembung udara yang terperangkap.</li>
+                <li>Tutup bagian atas cetakan dengan kain atau kardus untuk menjaga panas reaksi internal sabun.</li>
+                <li>Simpan di tempat yang kering dan aman dari jangkauan anak-anak atau hewan peliharaan selama 24 hingga 48 jam hingga sabun memadat.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
+              <button class="btn btn-primary btn-sm btn-mark-step">Tandai Selesai</button>
+            </div>
+          </article>
+
+          <!-- Langkah 5 -->
+          <article class="tutorial-step-card" id="step-5">
+            <div class="step-header-row">
+              <div class="step-num-badge">5</div>
+              <div>
+                <h3 class="step-title">Pemotongan & Proses Curing (3–4 Minggu)</h3>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">Penetralan pH & Pengerasan Sempurna</span>
+              </div>
+            </div>
+            <div class="step-content-body">
+              <p>
+                Sabun yang baru dikeluarkan dari cetakan masih bersifat agak basa. Sabun membutuhkan masa pengeringan (<em>curing</em>) agar proses saponifikasi tuntas 100%, pH menjadi netral aman, dan kadar air menguap sehingga sabun awet keras dan berbusa melimpah.
+              </p>
+              <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                <li>Keluarkan sabun dari cetakan, lalu potong-potong menjadi ukuran genggam menggunakan pisau bersih.</li>
+                <li>Susun potongan sabun dengan jarak 2 cm di atas rak berventilasi atau kertas koran bersih di ruangan yang sejuk tanpa paparan sinar matahari langsung.</li>
+                <li>Balik posisi sabun seminggu sekali selama <strong>3 hingga 4 minggu</strong>.</li>
+                <li>Sabun alami ramah lingkungan Anda kini siap dipakai untuk mencuci piring berminyak, wajan gosong, noda pakaian, atau mengepel lantai!</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
+              <button class="btn btn-primary btn-sm btn-mark-step">Tandai Selesai</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tanya Jawab & Solusi Kendala (FAQ) -->
+        <div class="faq-accordion">
+          <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Tanya Jawab & Kendala Pembuatan (FAQ)</h3>
+          
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Mengapa muncul lapisan serbuk putih di permukaan sabun? (Soda Ash)</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              Lapisan putih tersebut disebut <em>soda ash</em> (natrium karbonat), yang terbentuk ketika sisa soda api di permukaan kontak dengan karbon dioksida di udara. Ini sama sekali tidak berbahaya dan tidak mempengaruhi kualitas pembersih sabun. Cukup seka dengan kain lembap atau bilas sebentar dengan air saat pertama kali digunakan.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Apakah sabun minyak jelantah ini aman untuk mandi atau cuci muka?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              Sabun hasil olahan minyak jelantah diformulasikan dengan 0% <em>superfat</em> agar seluruh asam lemak bekas terikat sempurna. Hal ini menjadikannya pembersih yang sangat kuat mengangkat lemak membandel pada perabot dapur, lap makan, noda kerah baju, dan lantai. Namun, sifatnya terlalu mengikis minyak alami kulit jika dipakai untuk mandi rutin. Untuk sabun badan, disarankan memakai minyak nabati baru (seperti minyak kelapa murni/zaitun) dengan takaran <em>superfat</em> 5-8%.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Apa yang harus dilakukan jika larutan soda api tak sengaja mengenai kulit?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-content">
+              Segera basuh dan bilas bagian kulit yang terkena di bawah aliran air kran yang mengalir selama minimal 15 menit tanpa henti. Jangan langsung menyiramkan cuka pekat ke luka bakar kimia karena reaksi asam-basa menghasilkan panas tambahan; pembilasan dengan air dingin mengalir adalah pertolongan pertama medis yang paling dianjurkan.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- FITUR 5: Toko Produk & Bahan Baku Sabun EcoClean -->
+    <section id="shop" style="background: var(--bg-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Toko EcoClean Buleleng</span>
+          <h2 class="section-title">Bahan Baku, Sabun & Paket Pembuatan</h2>
+          <p class="section-desc">
+            Beli bahan baku murni berkualitas tinggi (Soda Api murni NaOH 99%, Aquades), sabun pembersih alami olahan jelantah, paket bundling starter kit hemat, atau manfaatkan jasa pengolahan jelantah profesional kami.
+          </p>
+        </div>
+
+        <!-- Filter Kategori Toko -->
+        <div class="filter-pills-group" style="justify-content: center; margin-bottom: 32px;">
+          <button class="filter-pill shop-filter-pill active" data-category="all">Semua Produk</button>
+          <button class="filter-pill shop-filter-pill" data-category="Bahan Baku">🧪 Bahan Baku</button>
+          <button class="filter-pill shop-filter-pill" data-category="Produk Olahan">🧼 Sabun Eco</button>
+          <button class="filter-pill shop-filter-pill" data-category="Jasa Pembuatan">👨‍🔬 Jasa Olah Jelantah</button>
+          <button class="filter-pill shop-filter-pill" data-category="Bundling Hemat">🎁 Paket Starter Kit</button>
+        </div>
+
+        <!-- Grid Produk -->
+        <div class="shop-product-grid" id="shopProductGrid">
+          <!-- Dimuat secara dinamis via js/shop.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Keranjang Belanja Floating Drawer -->
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <span>🛒 Keranjang Belanja</span>
+      </div>
+      <button id="closeCartBtn" class="close-cart-btn" aria-label="Tutup Keranjang">&times;</button>
+    </div>
+    <div id="cartItemsList" class="cart-items-body">
+      <!-- Dimuat dinamis via js/shop.js -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Total Pembayaran:</span>
+        <span id="cartTotalPrice" style="color: var(--primary);">Rp 0</span>
+      </div>
+      <button id="checkoutWaBtn" class="btn btn-primary" style="width: 100%;">
+        <span>Pesan via WhatsApp</span>
+        <span>💬 &rarr;</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Kaki Halaman (Footer) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <div class="logo-icon">🌿</div>
+            <span>Eco<span class="gradient-text">Clean</span> <small style="font-size: 0.72rem; color: var(--primary);">Buleleng</small></span>
+          </a>
+          <p>
+            Mendukung ekonomi sirkular rumah tangga dan pelestarian perairan pesisir Kabupaten Buleleng, Bali melalui daur ulang minyak jelantah menjadi sabun alami bermanfaat.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Fitur Platform</h5>
+          <ul>
+            <li><a href="#calculator">Kalkulator Sabun NaOH</a></li>
+            <li><a href="#locator">Peta Titik Tukar Buleleng</a></li>
+            <li><a href="#tutorial">Resep Batch Tersinkron</a></li>
+            <li><a href="#shop">Toko Bahan & Produk</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Pusat Informasi</h5>
+          <ul>
+            <li><a href="#education">Pelestarian Laut Bali</a></li>
+            <li><a href="#education">Bahaya Jelantah Bagi Tubuh</a></li>
+            <li><a href="#tutorial">Protokol Keselamatan APD</a></li>
+            <li><a href="#shop">Pemesanan via WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Depo Mitra Buleleng</h5>
+          <ul>
+            <li><a href="#locator">BSI Buleleng Singaraja</a></li>
+            <li><a href="#locator">Eco-Drop Lovina</a></li>
+            <li><a href="#locator">Depo Daur Ulang Seririt</a></li>
+            <li><a href="#locator">Posko Konservasi Penimbangan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 EcoClean Buleleng. Dirancang untuk kelestarian alam Bali.</div>
+        <div style="font-size: 0.8rem; color: var(--text-dim);">
+          ⚠️ Peringatan: Selalu patuhi standar keselamatan dan gunakan sarung tangan serta kacamata pelindung saat menangani NaOH.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modul Logika Aplikasi -->
+  <script src="js/data.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/locator.js"></script>
+  <script src="js/impact.js"></script>
+  <script src="js/tutorial.js"></script>
+  <script src="js/shop.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Google Maps JavaScript API Resmi -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFJ6uBsw7pRuCNsrtd5uIvVKn71CnBqCs&callback=initGoogleMap&loading=async"></script>
+</body>
+</html>
