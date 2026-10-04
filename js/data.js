@@ -1,5 +1,6 @@
 /**
- * Data Titik Penukaran Minyak Jelantah & Katalog Produk EcoClean Buleleng, Bali
+ * Data Titik Penukaran Minyak Jelantah, Katalog Produk,
+ * dan Indeks Artikel Edukasi EcoClean Buleleng, Bali
  */
 
 const EXCHANGE_LOCATIONS = [
@@ -185,5 +186,61 @@ const PRODUCTS = [
     badge: "Hemat 25%",
     image: "assets/images/product-starter-kit.jpg",
     description: "Paket bundling praktis berisi: Soda Api 500g + Aquades 1L + Cetakan Silikon Bunga + Kacamata APD + Sarung Tangan Karet + Gratis 1 Sabun Eco & Panduan Cetak Resep."
+  }
+];
+
+/**
+ * Indeks Artikel Edukasi: Dampak Buruk Minyak Jelantah
+ * Artikel: static HTML pada halaman tentang-minyak-jelantah.html
+ * (id ini wajib sama dengan atribut id pada elemen <article>)
+ */
+const ARTICLES = [
+  {
+    id: "art-1",
+    category: "Lingkungan",
+    icon: "💧",
+    readMinutes: 4,
+    title: "1 Liter Jelantah Melumpuhkan 1 Juta Liter Air Bersih",
+    excerpt: "Minyak tidak larut di air. Sekali menetes ke selokan, ia membentuk lapisan mengapung yang memblokir cahaya matahari, menguras oksigen terlarut, dan perlahan mematikan biota laut pesisir Buleleng."
+  },
+  {
+    id: "art-2",
+    category: "Lingkungan",
+    icon: "🧱",
+    readMinutes: 4,
+    title: "Fatberg: Batu Lemak yang Memencingkan Saluran Air",
+    excerpt: "Minyak yang tertinggal di gorong-gorong bercampur dengan sisa makanan dan rambut, lalu memadat seperti beton. Saluran tersumbat, air menggenang, dan biaya pembersihan membengkak."
+  },
+  {
+    id: "art-3",
+    category: "Lingkungan",
+    icon: "🌱",
+    readMinutes: 3,
+    title: "Tanah dan Sumur Warga yang Tercemar",
+    excerpt: "Minyak yang meresap ke tanah menutup pori-pori tanah, mematikan mikroorganisme pengurai, dan meningkatkan risiko kontaminasi sumur air minum di pekarangan rumah."
+  },
+  {
+    id: "art-4",
+    category: "Kesehatan",
+    icon: "⚠️",
+    readMinutes: 5,
+    title: "PAH dan Akrolein: Racun Karsinogen dari Oilspan",
+    excerpt: "Memanaskan minyak goreng berulang kali merusak rantai kimia lemak dan menghasilkan senyawa berbahaya, mulai dari radikal bebas hingga hidrokarbon aromatik polisiklik."
+  },
+  {
+    id: "art-5",
+    category: "Kesehatan",
+    icon: "🫀",
+    readMinutes: 4,
+    title: "Jelantah yang Menguras Hati, Ginjal, dan Jantung",
+    excerpt: "Asam lemak teroksidasi memicu plak arterosklerosis, menaikkan tekanan darah, dan membebani organ penyaring racun tubuh jika terus dikonsumsi."
+  },
+  {
+    id: "art-6",
+    category: "Mitos",
+    icon: "🔍",
+    readMinutes: 4,
+    title: "Mitos vs Fakta: Bolehkah Minyak Goreng Dipakai Berulang?",
+    excerpt: "Banyak mitos beredar tentang minyak goreng bekas. Ini penjelasan sederhana mana yang benar, mana yang keliru, dan apa yang sebaiknya Anda lakukan."
   }
 ];
