@@ -1,0 +1,132 @@
+{
+  "communities": {
+    "0": [
+      "js_locator",
+      "js_locator_locationmanager",
+      "js_locator_locationmanager_applyfilters",
+      "js_locator_locationmanager_bindevents",
+      "js_locator_locationmanager_constructor",
+      "js_locator_locationmanager_focuslocation",
+      "js_locator_locationmanager_getecomarkericon",
+      "js_locator_locationmanager_init",
+      "js_locator_locationmanager_initmap",
+      "js_locator_locationmanager_renderlocationcards",
+      "js_locator_locationmanager_updatemapmarkers"
+    ],
+    "1": [
+      "js_calculator",
+      "js_calculator_soapcalculator",
+      "js_calculator_soapcalculator_applybatchtotutorial",
+      "js_calculator_soapcalculator_calculate",
+      "js_calculator_soapcalculator_constructor",
+      "js_calculator_soapcalculator_copyrecipetoclipboard",
+      "js_calculator_soapcalculator_init",
+      "js_calculator_soapcalculator_setoilvolume",
+      "js_calculator_soapcalculator_updateactivepreset"
+    ],
+    "2": [
+      "js_tutorial",
+      "js_tutorial_soaptutorial",
+      "js_tutorial_soaptutorial_checksafetyreadiness",
+      "js_tutorial_soaptutorial_confirmsafetyreadiness",
+      "js_tutorial_soaptutorial_constructor",
+      "js_tutorial_soaptutorial_init",
+      "js_tutorial_soaptutorial_updatetutorialbatchdisplays"
+    ],
+    "3": [
+      "js_shop",
+      "js_shop_ecoshop",
+      "js_shop_ecoshop_applyfilter",
+      "js_shop_ecoshop_bindevents",
+      "js_shop_ecoshop_checkoutwhatsapp",
+      "js_shop_ecoshop_togglecart"
+    ],
+    "4": [
+      "js_impact",
+      "js_impact_impactsimulator",
+      "js_impact_impactsimulator_constructor",
+      "js_impact_impactsimulator_init",
+      "js_impact_impactsimulator_updateimpact"
+    ],
+    "5": [
+      "js_data",
+      "js_data_exchange_locations",
+      "js_data_impact_multipliers",
+      "js_data_products"
+    ],
+    "6": [
+      "js_shop_ecoshop_addtocart",
+      "js_shop_ecoshop_savecart",
+      "js_shop_ecoshop_updatecartui",
+      "js_shop_ecoshop_updatequantity"
+    ],
+    "7": [
+      "js_shop_ecoshop_buynowsingle",
+      "js_shop_ecoshop_constructor",
+      "js_shop_ecoshop_init",
+      "js_shop_ecoshop_renderproducts"
+    ],
+    "8": [
+      "js_app",
+      "js_app_applytheme"
+    ]
+  },
+  "cohesion": {
+    "0": 0.36363636363636365,
+    "1": 0.4166666666666667,
+    "2": 0.47619047619047616,
+    "3": 0.5333333333333333,
+    "4": 0.6,
+    "5": 0.5,
+    "6": 0.6666666666666666,
+    "7": 0.5,
+    "8": 1.0
+  },
+  "gods": [
+    {
+      "id": "js_shop_ecoshop",
+      "label": "EcoShop",
+      "degree": 13
+    },
+    {
+      "id": "js_locator_locationmanager",
+      "label": "LocationManager",
+      "degree": 10
+    },
+    {
+      "id": "js_calculator_soapcalculator",
+      "label": "SoapCalculator",
+      "degree": 8
+    },
+    {
+      "id": "js_tutorial_soaptutorial",
+      "label": "SoapTutorial",
+      "degree": 6
+    },
+    {
+      "id": "js_impact_impactsimulator",
+      "label": "ImpactSimulator",
+      "degree": 4
+    },
+    {
+      "id": "js_data_exchange_locations",
+      "label": "EXCHANGE_LOCATIONS",
+      "degree": 1
+    },
+    {
+      "id": "js_data_impact_multipliers",
+      "label": "IMPACT_MULTIPLIERS",
+      "degree": 1
+    },
+    {
+      "id": "js_data_products",
+      "label": "PRODUCTS",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

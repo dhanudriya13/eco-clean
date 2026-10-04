@@ -1,0 +1,44 @@
+{
+  "js/app.js": {
+    "mtime": 1790936519.409599,
+    "seen": 1791127332.1625645,
+    "ast_hash": "9dcd89f5acc747e170e4469ff4fca723",
+    "semantic_hash": "9dcd89f5acc747e170e4469ff4fca723"
+  },
+  "js/calculator.js": {
+    "mtime": 1790936519.4936175,
+    "seen": 1791127332.162575,
+    "ast_hash": "bfc8665bb01c6f351083825ab5ae96bf",
+    "semantic_hash": "bfc8665bb01c6f351083825ab5ae96bf"
+  },
+  "js/data.js": {
+    "mtime": 1790936519.5711427,
+    "seen": 1791127332.1625795,
+    "ast_hash": "b39124f797ae2c1fe7fa6b3db9def64d",
+    "semantic_hash": "b39124f797ae2c1fe7fa6b3db9def64d"
+  },
+  "js/impact.js": {
+    "mtime": 1790936519.6367059,
+    "seen": 1791127332.1625817,
+    "ast_hash": "09b0a27c959313a67f905a12a5208a26",
+    "semantic_hash": "09b0a27c959313a67f905a12a5208a26"
+  },
+  "js/locator.js": {
+    "mtime": 1790936519.7312357,
+    "seen": 1791127332.1625855,
+    "ast_hash": "1e905d0b8f7b026a916e0b50c99dfd95",
+    "semantic_hash": "1e905d0b8f7b026a916e0b50c99dfd95"
+  },
+  "js/shop.js": {
+    "mtime": 1790936519.8137717,
+    "seen": 1791127332.1625881,
+    "ast_hash": "66cb287e75a875a9b9e0b7e44d9c78e9",
+    "semantic_hash": "66cb287e75a875a9b9e0b7e44d9c78e9"
+  },
+  "js/tutorial.js": {
+    "mtime": 1790936519.8877697,
+    "seen": 1791127332.1625907,
+    "ast_hash": "ec65bfb113744a5e34950cb88303ee41",
+    "semantic_hash": "ec65bfb113744a5e34950cb88303ee41"
+  }
+}
